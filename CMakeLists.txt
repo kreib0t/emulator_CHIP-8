@@ -3,7 +3,9 @@ cmake_minimum_required(VERSION 3.18.1 FATAL_ERROR)
 set(PROJECT_NAME emulator_CHIP-8)
 project(${PROJECT_NAME})
 
-add_executable(${PROJECT_NAME} src/main.c)
+add_executable(${PROJECT_NAME}
+    src/main.c
+    src/emu_chip8.h)
 
 set(GLFW_BUILD_DOCS OFF CACHE BOOL "" FORCE)
 set(GLFW_BUILD_TESTS OFF CACHE BOOL "" FORCE)
